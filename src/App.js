@@ -8,7 +8,7 @@ import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route element={<LayoutPage />}>
           <Route path="/" element={<Dashboard />} />
